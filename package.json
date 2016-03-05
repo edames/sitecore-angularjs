@@ -1,0 +1,10 @@
+{
+  "name": "sitecore-angularjs",
+  "description": "install task runners for project and use MSBuild for build",
+  "version": "0.0.1",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-cli" : "^1.2.0", 
+    "gulp-shell": "^0.5.2"
+  }
+}
