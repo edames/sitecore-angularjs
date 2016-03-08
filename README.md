@@ -25,6 +25,7 @@ The downside is that you need to maintain `csproj` files manually for classes an
 ###NuGet
 
 **Copy NuGet.exe and Add to Environment Path**
+
 1. Right click on the NuGet.exe file and goto Properties
 2. Unblock the executable and close the Properties window
 3. Copy the `NuGet.exe` to a location you like to keep utility or tools.  I usually create a folder under `C:\Program Files (x86)` after the tool, `NuGet`, and copy the executable there.
@@ -79,6 +80,12 @@ msbuild .\MusicStore.Web.csproj /p:Configuration=Debug
 ```
 npm install gulp-cli -g
 npm install
+```
+
+##IIS Express
+
+```
+$env:Path += ";C:\Program Files\IIS Express\"
 ```
 
 ##Sitecore and Glass Mapper Dependency
