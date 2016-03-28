@@ -1,5 +1,7 @@
 # Working with Sitecore and AngularJS
 
+[![Build status](https://ci.appveyor.com/api/projects/status/p8eroyo0mhff33ka?svg=true)](https://ci.appveyor.com/project/edames/sitecore-angularjs)
+
 This repo follows along with the blog post series on using AngularJS with Sitecore - [http://ehrendames.com/sitecore-with-angular-js-part-1](http://ehrendames.com/sitecore-with-angular-js-part-1)
 
 This repo removes its dependency from Sitecore and Glass Mapper assemblies.  See section on Sitecore and Glass Mapper Dependency.
