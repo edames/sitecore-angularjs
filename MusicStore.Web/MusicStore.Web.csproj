@@ -62,6 +62,7 @@
     <Compile Include="api\MusicController.cs" />
     <Compile Include="Models\IAlbum.cs" />
     <Compile Include="Models\Album.cs" />
+    <Compile Include="Models\AlbumResults.cs" />
     <Compile Include="Models\DTO\DateRangeDTO.cs" />
     <Compile Include="Services\Albums\IAlbumService.cs" />
     <Compile Include="Services\Albums\AlbumService.cs" />
