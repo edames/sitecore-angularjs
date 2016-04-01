@@ -10,7 +10,8 @@ namespace MusicStore.Web.Api
     public class MusicController : ApiController
     {
         [HttpPost]
-        public AlbumResults Albums(DateRangeDTO range)
+        [Route("api/music/albums")]
+        public AlbumResults Albums([FromBody]DateRangeDTO range)
         {
             IAlbumService albumService = new AlbumService();
             
