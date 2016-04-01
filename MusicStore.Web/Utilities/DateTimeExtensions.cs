@@ -6,7 +6,9 @@ namespace MusicStore.Web.Utilities
     {
         public static DateTime ConvertToDateTime(this string dateTimeStr)
         {
-            throw new Exception();
+            DateTime convertedDateTime = DateTime.MinValue;
+            DateTime.TryParse(dateTimeStr, out convertedDateTime);
+            return convertedDateTime;
         }
     }
 }
