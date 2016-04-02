@@ -25,4 +25,9 @@ gulp.task('restore', function(){
   ])
 });
 
+gulp.task('copy', function(){
+    gulp.src('./node_modules/angular/*.js')
+        .pipe(gulp.dest('./MusicStore.Web/js/'));
+});
+
 gulp.task('default', ['watch']);
