@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace MusicStore.Web.Controllers
 {
-    public class AlbumController : Controller
+    public class AlbumsController : Controller
     {
         public ActionResult Index()
         {
