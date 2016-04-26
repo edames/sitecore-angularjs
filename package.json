@@ -3,12 +3,13 @@
   "description": "install task runners for project and use MSBuild for build",
   "version": "0.0.1",
   "devDependencies": {
+    "browser-sync": "^2.12.3",
     "gulp": "^3.9.0",
-    "gulp-cli" : "^1.2.0", 
-    "gulp-shell": "^0.5.2",
-    "gulp-copy": "^0.0.2"
+    "gulp-cli": "^1.2.0",
+    "gulp-copy": "^0.0.2",
+    "gulp-shell": "^0.5.2"
   },
   "dependencies": {
-      "angular": "1.5.3"
+    "angular": "1.5.3"
   }
 }
