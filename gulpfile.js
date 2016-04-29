@@ -41,8 +41,8 @@ gulp.task('init-browser-sync', function()
     }); 
 });
 
-gulp.task('sync', ['init-browser-sync'], function() {
-    gulp.watch("public/**/*").on('change', browserSync.reload);
+gulp.task('sync', [], function() {
+    gulp.watch(["public/**/*", "!public/bin/**/*"], {debounceDelay: 2000}).on('change', browserSync.reload);
     //browserSync.reload();
 });
 
@@ -51,4 +51,4 @@ gulp.task('server', shell.task([
     'start start_website.bat'
 ]));
 
-gulp.task('default', ['server', 'watch']);
+gulp.task('default', ['server', 'init-browser-sync', 'watch']);
