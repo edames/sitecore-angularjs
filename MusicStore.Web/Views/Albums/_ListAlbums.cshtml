@@ -3,7 +3,7 @@
         <input type="text" class="albums--start-date" />
         <input type="text" class="albums--end-date" />
         <input type="button" value="Filter" class="albums--submit-button" />
-        <div ng-repeat="item in albums">
+        <div ng-repeat="item in vm.albums.Results">
             <div>{{ item.title }}</div>
             <div>{{ item.artist }}</div>
             <div>{{ item.releasedate }}</div>

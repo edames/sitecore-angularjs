@@ -4,8 +4,18 @@ angular
     .module('app.albums', [])
     .controller('albums', albums);
 
-function albums($http, $scope) {
+function albums($scope, $http) {
+    var vm = this;
+
+    vm.albums = {
+        Results: [],
+        TotalCount: 0
+    };
+
+    vm.albums = getAlbumsBetweenReleaseDates();
+
     function getAlbumsBetweenReleaseDates(startdate, enddate) {
+
         var daterange = {
             'StartDate': startdate || '',
             'EndDate': enddate || ''
@@ -14,6 +24,7 @@ function albums($http, $scope) {
         var dto = JSON.stringify(daterange);
 
         var requestUrl = "/api/music/albums";
+
         return $http({
             method: 'post',
             url: requestUrl,
@@ -21,8 +32,13 @@ function albums($http, $scope) {
             headers: {
                 'Content-Type': 'application/json'
             }
-        }).Results;
+        }).then(getResults);
     }
 
-    $scope.albums = getAlbumsBetweenReleaseDates();
+    function getResults(response)
+    {
+        return response.data;
+    }
 }
+
+alert('hello world 123');
