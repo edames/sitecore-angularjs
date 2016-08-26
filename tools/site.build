@@ -29,6 +29,16 @@
                         <Output TaskParameter="ReturnCode" PropertyName="Return" />
                 </MSBuild.ExtensionPack.FileSystem.RoboCopy>
                 <Message Text="ExitCode = $(Exit)"/>
+                <MSBuild.ExtensionPack.FileSystem.RoboCopy Source="../MusicStore.Web/css" Destination="$(DeployPath)/css" Files="*.*" Options="/MIR">
+                        <Output TaskParameter="ExitCode" PropertyName="Exit" />
+                        <Output TaskParameter="ReturnCode" PropertyName="Return" />
+                </MSBuild.ExtensionPack.FileSystem.RoboCopy>
+                <Message Text="ExitCode = $(Exit)"/>
+                <MSBuild.ExtensionPack.FileSystem.RoboCopy Source="../MusicStore.Web/font" Destination="$(DeployPath)/font" Files="*.*" Options="/MIR">
+                        <Output TaskParameter="ExitCode" PropertyName="Exit" />
+                        <Output TaskParameter="ReturnCode" PropertyName="Return" />
+                </MSBuild.ExtensionPack.FileSystem.RoboCopy>
+                <Message Text="ExitCode = $(Exit)"/>
                 <Message Text="ReturnCode = $(Return)"/>   
                 <MSBuild.ExtensionPack.FileSystem.RoboCopy Source="../MusicStore.Web/" Destination="$(DeployPath)/" Files="Web.config"  Options="">
                         <Output TaskParameter="ExitCode" PropertyName="Exit" />

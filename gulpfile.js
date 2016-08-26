@@ -32,6 +32,14 @@ gulp.task('restore', function(){
 gulp.task('copy', function(){
     gulp.src('./node_modules/angular/*.js')
         .pipe(gulp.dest('./MusicStore.Web/js/'));
+    gulp.src('./node_modules/bootstrap/dist/css/*')
+        .pipe(gulp.dest('./MusicStore.Web/css/'));
+    gulp.src('./node_modules/bootstrap/dist/font/*')
+        .pipe(gulp.dest('./MusicStore.Web/font/'));
+    gulp.src('./node_modules/bootstrap/dist/js/bootstrap.*')
+        .pipe(gulp.dest('./MusicStore.Web/js/'));
+    gulp.src('./node_modules/jquery/dist/*.js')
+        .pipe(gulp.dest('./MusicStore.Web/js/'));    
 });
 
 gulp.task('init-browser-sync', function()

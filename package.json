@@ -10,6 +10,8 @@
     "gulp-shell": "^0.5.2"
   },
   "dependencies": {
-    "angular": "1.5.3"
+    "angular": "1.5.3",
+    "bootstrap": "3.3.7",
+    "jquery": "3.1.0"
   }
 }
