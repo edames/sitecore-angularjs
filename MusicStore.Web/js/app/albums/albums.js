@@ -6,13 +6,9 @@ angular
 
 function albums($scope, $http) {
     var vm = this;
-
-    vm.albums = {
-        Results: [],
-        TotalCount: 0
-    };
-
-    vm.albums = getAlbumsBetweenReleaseDates();
+    
+    getAlbumsBetweenReleaseDates();
+    $scope.vm = vm;
 
     function getAlbumsBetweenReleaseDates(startdate, enddate) {
 
@@ -37,8 +33,6 @@ function albums($scope, $http) {
 
     function getResults(response)
     {
-        return response.data;
+        vm.albums = response.data;
     }
 }
-
-alert('hello world 123');
